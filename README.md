@@ -48,7 +48,7 @@ http://127.0.0.1:8080/homicides/1236/
 -> This endpoint returns a paginated list of all homicide records.
 
 ## Application Details:
-Admin Username = siteadmin | Admin Password = admin123
-Python Ver = 3.12.3
-Django Ver = 4.2
-Django Rest Framework (DRF) Ver = 3.14
+- Admin Username = siteadmin | Admin Password = admin123
+- Python Ver = 3.12.3
+- Django Ver = 4.2
+- Django Rest Framework (DRF) Ver = 3.14
