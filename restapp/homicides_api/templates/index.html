@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[CM3035] AwD Midterm</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            text-decoration: none;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>'Homicides in 50 US cities' RESTful API</h1>
+    <h2>[CM3035] Advanced Web Development</h2> 
+    <br>
+    <ul>
+        <li>
+            <strong>GET http://127.0.0.1:8080/homicides/by-victim-race/?race=[RACE VALUE]</strong><br>
+            <a href="/homicides/by-victim-race/?race=White">http://127.0.0.1:8080/homicides/by-victim-race/?race=White</a>
+            <hr>
+            <p>
+                -> This endpoint filters homicides by victim race. Change the `race` parameter to filter by other races (eg. White, Black, Asian, Hispanic).
+            </p>
+        </li>
+        <li>
+            <strong>GET http://127.0.0.1:8080/homicides/by-gender-age-range/?gender=[GENDER VALUE]&min_age=[AGE VALUE]&max_age=[AGE VALUE]</strong><br>
+            <a href="/homicides/by-gender-age-range/?gender=Male&min_age=20&max_age=30">http://127.0.0.1:8080/homicides/by-gender-age-range/?gender=Male&min_age=20&max_age=30</a><br>
+            <hr>
+            <p>
+                -> This endpoint filters homicides by victim gender and age range. Adjust the `gender`, `min_age`, and `max_age` parameters as needed.
+            </p>
+        </li>
+        <li>
+            <strong>GET http://127.0.0.1:8080/homicides/homicides-count-by-city/</strong><br>
+            <a href="/homicides/homicides-count-by-city/">http://127.0.0.1:8080/homicides/homicides-count-by-city/</a><br>
+            <hr>
+            <p>
+                -> This endpoint returns the count of homicides by city.
+            </p>
+        </li>
+        <li>
+            <strong>POST http://127.0.0.1:8080/homicides/</strong><br>
+            <a href="/homicides/">http://127.0.0.1:8080/homicides/</a><br>
+            <hr>
+            <p>
+                -> Use the form at the end of this endpoint to add a new homicide record.
+            </p>
+        </li>
+        <li>
+            <strong>PUT http://127.0.0.1:8080/homicides/{id}/</strong><br>
+            <a href="/homicides/1235/">http://127.0.0.1:8080/homicides/1235/</a><br>
+            <hr>
+            <p>
+                -> Use the form at the end of this endpoint to update an existing homicide record.
+            </p>
+        </li>
+        <li>
+            <strong>DELETE http://127.0.0.1:8080/homicides/{id}/</strong><br>
+            <a href="/homicides/1236/">http://127.0.0.1:8080/homicides/1236/</a><br>
+            <hr>
+            <p>
+                -> Use the 'DELETE' button at the top-right of the endpoint to delete a homicide record.
+            </p>
+        </li>
+    </ul>   
+    <h1>Additional Default Endpoints</h1>
+    <ul>
+        <li>
+            <strong>GET: List of all Victims</strong><br>
+            <a href="/victims/">/victims/</a><br>
+            <hr>
+            <p>
+                -> This endpoint returns a paginated list of all victim records.
+            </p>
+        </li>
+        <li>
+            <strong>GET: List of all Locations</strong><br>
+            <a href="/locations/">/locations/</a><br>
+            <hr>
+            <p>
+                -> This endpoint returns a paginated list of all location records.
+            </p>
+        </li>
+        <li>
+            <strong>GET: List of all Dispositions</strong><br>
+            <a href="/dispositions/">/dispositions/</a><br>
+            <hr>
+            <p>
+                -> This endpoint returns a paginated list of all dispositions records.
+            </p>
+        </li>
+        <li>
+            <strong>GET: List of all homicides</strong><br>
+            <a href="/homicides/">/homicides/</a><br>
+            <hr>
+            <p>
+                -> This endpoint returns a paginated list of all homicide records.
+            </p>
+        </li>
+    </ul> 
+    <h2>Application Details:</h2>
+    <ul>
+        <li>Admin Username = siteadmin | Admin Password = admin123</li>
+        <li>Python Ver = 3.12.3</li>
+        <li>Django Ver = 4.2</li>
+        <li>Django Rest Framework (DRF) Ver = 3.14</li>
+    </ul>
+</body>
+</html>
